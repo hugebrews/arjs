@@ -13,7 +13,7 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
 
         
-<a-scene vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+<a-scene background="color: black" transparent="true" vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
 
 
@@ -44,12 +44,12 @@
 
 <!--              <a-plane color="#222" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box> -->
         <a-marker type='barcode' value='1'>
-            <a-entity light="color: #fff; type: ambient; intensity: 1.5" scale="23 63 0" id="rasp" geometry="primitive: plane" material="src: url(beer-ar-blackberry-no-glow.png)" look-at="[camera]"></a-entity>
+            <a-entity light="color: #fff; type: ambient; intensity: 1.5" scale="23 63 0" id="rasp" geometry="primitive: plane" material="src: url(beer-ar-raspberry-no-glow.png)" look-at="[camera]"></a-entity>
         </a-marker>
     
     
         <a-marker type='barcode' value='2'>
-            <a-entity light="color: #fff; type: ambient; intensity: 2.0" scale="20 22 0" id="black" geometry="primitive: plane" material="src: url(beer-ar-blackberry-no-glow-no-bg.png)" look-at="[camera]"></a-entity>
+            <a-entity light="color: #fff; type: ambient; intensity: 2.0" scale="20 20 0" id="black" geometry="primitive: plane" material="src: url(beer-ar-blackberry-no-glow-no-bg.png)" look-at="[camera]"></a-entity>
         </a-marker>    
     
 <!--        <a-marker type='barcode' value='2'>
